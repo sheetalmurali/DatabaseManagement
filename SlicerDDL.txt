@@ -1,0 +1,228 @@
+CREATE GLOBAL CUBE [Sheetal Murali Cube] STORAGE 'C:\Users\mahes\Downloads\KMBI\Sheetal Murali Cube.cub' FROM [Sheetal Murali Cube]
+(
+	MEASURE [Sheetal Murali Cube].[UNITPRICE],
+	MEASURE [Sheetal Murali Cube].[QTY],
+	MEASURE [Sheetal Murali Cube].[SALES],
+	MEASURE [Sheetal Murali Cube].[RATING],
+	MEASURE [Sheetal Murali Cube].[Factsales Count],
+
+	DIMENSION [Sheetal Murali Cube].[Dim Customer].[City]
+	(
+		LEVEL [(All)],
+		LEVEL [City]
+	),
+	DIMENSION [Sheetal Murali Cube].[Dim Customer].[Country]
+	(
+		LEVEL [(All)],
+		LEVEL [Country]
+	),
+	DIMENSION [Sheetal Murali Cube].[Dim Customer].[Customer ID]
+	(
+		LEVEL [(All)],
+		LEVEL [Customer ID]
+	),
+	DIMENSION [Sheetal Murali Cube].[Dim Customer].[Email]
+	(
+		LEVEL [(All)],
+		LEVEL [Email]
+	),
+	DIMENSION [Sheetal Murali Cube].[Dim Customer].[First Name]
+	(
+		LEVEL [(All)],
+		LEVEL [First Name]
+	),
+	DIMENSION [Sheetal Murali Cube].[Dim Customer].[Gender]
+	(
+		LEVEL [(All)],
+		LEVEL [Gender]
+	),
+	DIMENSION [Sheetal Murali Cube].[Dim Customer].[Hierarchy]
+	(
+		LEVEL [(All)],
+		LEVEL [Country],
+		LEVEL [City],
+		LEVEL [Gender],
+		LEVEL [Title],
+		LEVEL [Last Name],
+		LEVEL [First Name]
+	),
+	DIMENSION [Sheetal Murali Cube].[Dim Customer].[Last Name]
+	(
+		LEVEL [(All)],
+		LEVEL [Last Name]
+	),
+	DIMENSION [Sheetal Murali Cube].[Dim Customer].[Phone]
+	(
+		LEVEL [(All)],
+		LEVEL [Phone]
+	),
+	DIMENSION [Sheetal Murali Cube].[Dim Customer].[Street Address]
+	(
+		LEVEL [(All)],
+		LEVEL [Street Address]
+	),
+	DIMENSION [Sheetal Murali Cube].[Dim Customer].[Title]
+	(
+		LEVEL [(All)],
+		LEVEL [Title]
+	),
+	DIMENSION [Sheetal Murali Cube].[Dim Product].[Address]
+	(
+		LEVEL [(All)],
+		LEVEL [Address]
+	),
+	DIMENSION [Sheetal Murali Cube].[Dim Product].[City Name]
+	(
+		LEVEL [(All)],
+		LEVEL [City Name]
+	),
+	DIMENSION [Sheetal Murali Cube].[Dim Product].[Country]
+	(
+		LEVEL [(All)],
+		LEVEL [Country]
+	),
+	DIMENSION [Sheetal Murali Cube].[Dim Product].[DESCRIPTION]
+	(
+		LEVEL [(All)],
+		LEVEL [DESCRIPTION]
+	),
+	DIMENSION [Sheetal Murali Cube].[Dim Product].[Hierarchy]
+	(
+		LEVEL [(All)],
+		LEVEL [PRODCATEGORY],
+		LEVEL [Country],
+		LEVEL [State],
+		LEVEL [City Name],
+		LEVEL [Pincode],
+		LEVEL [Name]
+	),
+	DIMENSION [Sheetal Murali Cube].[Dim Product].[Name]
+	(
+		LEVEL [(All)],
+		LEVEL [Name]
+	),
+	DIMENSION [Sheetal Murali Cube].[Dim Product].[Phone Number]
+	(
+		LEVEL [(All)],
+		LEVEL [Phone Number]
+	),
+	DIMENSION [Sheetal Murali Cube].[Dim Product].[Pincode]
+	(
+		LEVEL [(All)],
+		LEVEL [Pincode]
+	),
+	DIMENSION [Sheetal Murali Cube].[Dim Product].[PRODCATEGORY]
+	(
+		LEVEL [(All)],
+		LEVEL [PRODCATEGORY]
+	),
+	DIMENSION [Sheetal Murali Cube].[Dim Product].[Product ID]
+	(
+		LEVEL [(All)],
+		LEVEL [Product ID]
+	),
+	DIMENSION [Sheetal Murali Cube].[Dim Product].[State]
+	(
+		LEVEL [(All)],
+		LEVEL [State]
+	),
+	DIMENSION [Sheetal Murali Cube].[Dim Product].[Website]
+	(
+		LEVEL [(All)],
+		LEVEL [Website]
+	),
+	DIMENSION [Sheetal Murali Cube].[Dim Rating].[City Name]
+	(
+		LEVEL [(All)],
+		LEVEL [City Name]
+	),
+	DIMENSION [Sheetal Murali Cube].[Dim Rating].[Country]
+	(
+		LEVEL [(All)],
+		LEVEL [Country]
+	),
+	DIMENSION [Sheetal Murali Cube].[Dim Rating].[CUSTOMERID]
+	(
+		LEVEL [(All)],
+		LEVEL [CUSTOMERID]
+	),
+	DIMENSION [Sheetal Murali Cube].[Dim Rating].[Hierarchy]
+	(
+		LEVEL [(All)],
+		LEVEL [Country],
+		LEVEL [State],
+		LEVEL [City Name],
+		LEVEL [PRODCATEGORY],
+		LEVEL [Name]
+	),
+	DIMENSION [Sheetal Murali Cube].[Dim Rating].[Name]
+	(
+		LEVEL [(All)],
+		LEVEL [Name]
+	),
+	DIMENSION [Sheetal Murali Cube].[Dim Rating].[Pincode]
+	(
+		LEVEL [(All)],
+		LEVEL [Pincode]
+	),
+	DIMENSION [Sheetal Murali Cube].[Dim Rating].[PRODCATEGORY]
+	(
+		LEVEL [(All)],
+		LEVEL [PRODCATEGORY]
+	),
+	DIMENSION [Sheetal Murali Cube].[Dim Rating].[RATINGID]
+	(
+		LEVEL [(All)],
+		LEVEL [RATINGID]
+	),
+	DIMENSION [Sheetal Murali Cube].[Dim Rating].[State]
+	(
+		LEVEL [(All)],
+		LEVEL [State]
+	),
+	DIMENSION [Sheetal Murali Cube].[Dim Time].[DATE]
+	(
+		LEVEL [(All)],
+		LEVEL [DATE]
+	),
+	DIMENSION [Sheetal Murali Cube].[Dim Time].[DAY]
+	(
+		LEVEL [(All)],
+		LEVEL [DAY]
+	),
+	DIMENSION [Sheetal Murali Cube].[Dim Time].[DAYOFWEEK]
+	(
+		LEVEL [(All)],
+		LEVEL [DAYOFWEEK]
+	),
+	DIMENSION [Sheetal Murali Cube].[Dim Time].[Hierarchy]
+	(
+		LEVEL [(All)],
+		LEVEL [YEAR],
+		LEVEL [QUARTER],
+		LEVEL [MONTH],
+		LEVEL [DAY]
+	),
+	DIMENSION [Sheetal Murali Cube].[Dim Time].[MONTH]
+	(
+		LEVEL [(All)],
+		LEVEL [MONTH]
+	),
+	DIMENSION [Sheetal Murali Cube].[Dim Time].[QUARTER]
+	(
+		LEVEL [(All)],
+		LEVEL [QUARTER]
+	),
+	DIMENSION [Sheetal Murali Cube].[Dim Time].[Time ID]
+	(
+		LEVEL [(All)],
+		LEVEL [Time ID]
+	),
+	DIMENSION [Sheetal Murali Cube].[Dim Time].[YEAR]
+	(
+		LEVEL [(All)],
+		LEVEL [YEAR]
+	)
+
+)
+
